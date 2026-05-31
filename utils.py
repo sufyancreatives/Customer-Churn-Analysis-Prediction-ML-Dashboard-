@@ -255,7 +255,6 @@ def train_model(df: pd.DataFrame, model_name: str, test_size: float = 0.2):
 # ─────────────────────────────────────────────
 #  MODEL LOAD / SAVE
 # ─────────────────────────────────────────────
-@st.cache_resource(show_spinner=False)
 def load_saved_model():
     """Load .pkl model from disk, return None if not found."""
     if os.path.exists(MODEL_PATH):
